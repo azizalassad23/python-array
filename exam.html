@@ -198,56 +198,56 @@
             {
                 title: "LEVEL 1: INITIALIZATION",
                 desc: "Buat list <code>inventory</code> berisi 3 string: 'Pedang', 'Perisai', 'Potion'.",
-                hint: "Gunakan kurung siku [ ]",
+                //hint: "Gunakan kurung siku [ ]",
                 default: "inventory = ",
                 check: (c, o) => c.includes('inventory') && c.includes('[') && (c.match(/,/g)||[]).length>=2
             },
             {
                 title: "LEVEL 2: ACCESS",
                 desc: "Print item PERTAMA dan TERAKHIR dari list data.",
-                hint: "Index 0 dan -1",
+                //hint: "Index 0 dan -1",
                 default: "data = ['A', 'B', 'C', 'D']\n# Print item pertama & terakhir",
                 check: (c, o) => o.includes('A') && o.includes('D')
             },
             {
                 title: "LEVEL 3: APPEND",
                 desc: "Tambahkan 'Router' ke list <code>alat</code>.",
-                hint: "Gunakan .append()",
+                //hint: "Gunakan .append()",
                 default: "alat = ['Kabel', 'Switch']\n# Tambah item\nprint(alat)",
                 check: (c, o) => c.includes('.append') && o.includes('Router')
             },
             {
                 title: "LEVEL 4: UPDATE",
                 desc: "Ubah item kedua ('B') menjadi 'Z'.",
-                hint: "Index 1 = 'Z'",
+                //hint: "Index 1 = 'Z'",
                 default: "huruf = ['A', 'B', 'C']\n# Ubah data\nprint(huruf)",
                 check: (c, o) => c.includes('[1]') && o.includes('Z') && !o.includes('B')
             },
             {
                 title: "LEVEL 5: REMOVE",
                 desc: "Hapus 'Virus' dari list.",
-                hint: "Gunakan .remove()",
+                //hint: "Gunakan .remove()",
                 default: "list = ['OS', 'Virus', 'Driver']\n# Hapus virus\nprint(list)",
                 check: (c, o) => c.includes('.remove') && !o.includes('Virus')
             },
             {
                 title: "LEVEL 6: LENGTH",
                 desc: "Print jumlah data menggunakan <code>len()</code>.",
-                hint: "print(len(...))",
+                //hint: "print(len(...))",
                 default: "users = ['User1', 'User2', 'User3']\n# Hitung jumlah",
                 check: (c, o) => c.includes('len') && o.includes('3')
             },
             {
                 title: "LEVEL 7: LOOPING",
                 desc: "Gunakan loop untuk print setiap nama.",
-                hint: "for x in siswa:",
+                //hint: "for x in siswa:",
                 default: "siswa = ['Ali', 'Budi']\n# Loop here",
                 check: (c, o) => c.includes('for') && o.includes('Ali')
             },
             {
                 title: "LEVEL 8: SUMMATION",
                 desc: "Hitung total angka menggunakan loop.",
-                hint: "total = total + x",
+                //hint: "total = total + x",
                 default: "angka = [10, 20, 30]\ntotal = 0\n# Loop sum\nprint(total)",
                 check: (c, o) => o.includes('60')
             }
@@ -372,3 +372,4 @@ mystdout.getvalue()`;
 </body>
 
 </html>
+
