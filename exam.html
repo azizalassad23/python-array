@@ -79,7 +79,7 @@
         
         .level-badge { background: #333; color: #fff; padding: 4px 8px; font-size: 0.8rem; }
         h2 { color: var(--neon-cyan); font-family: var(--font-header); font-size: 1.1rem; }
-        /*.hint-box { background: rgba(252, 238, 10, 0.1); border-left: 3px solid var(--neon-yellow); padding: 15px; margin-top: 20px; font-size: 0.9rem;}*/
+        .hint-box { background: rgba(252, 238, 10, 0.1); border-left: 3px solid var(--neon-yellow); padding: 15px; margin-top: 20px; font-size: 0.9rem;}
 
         .btn-run { background: var(--neon-green); color: #000; padding: 10px 20px; border: none; font-family: var(--font-header); cursor: pointer; }
         .btn-next { background: var(--neon-cyan); color: #000; padding: 10px 20px; border: none; font-family: var(--font-header); cursor: pointer; display: none; }
@@ -115,7 +115,7 @@
             <span class="level-badge" id="lvl-badge">LEVEL 1/8</span>
             <h2 id="q-title">...</h2>
             <div id="q-desc" style="color:#aaa; line-height:1.6;">...</div>
-            <!-- <div class="hint-box"><strong>HINT:</strong> <span id="q-hint">...</span></div> -->
+            <div class="hint-box"><strong>HINT:</strong> <span id="q-hint">...</span></div>
         </div>
 
         <div class="editor-panel">
@@ -219,7 +219,7 @@
             {
                 title: "LEVEL 4: UPDATE",
                 desc: "Ubah item kedua ('B') menjadi 'Z'.",
-                //hint: "Index 1 = 'Z'",
+               //hint: "Index 1 = 'Z'",
                 default: "huruf = ['A', 'B', 'C']\n# Ubah data\nprint(huruf)",
                 check: (c, o) => c.includes('[1]') && o.includes('Z') && !o.includes('B')
             },
@@ -372,5 +372,3 @@ mystdout.getvalue()`;
 </body>
 
 </html>
-
-
